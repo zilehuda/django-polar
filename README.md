@@ -57,6 +57,15 @@ $ docker-compose run --rm api python manage.py createsuperuser
 
 - API Documentation available at `http://localhost/docs/`
 
+## Release Notes
+Here's a running list of recent changes!
+### 0.1
+- First skeleton of an app
+- Skeleton include docker-compose files, src file, package dependencies
 
-## Contact
+
+
+## For more information
 - Zilehuda - [LinkedIn/zilehuda](https://www.linkedin.com/in/zilehuda/)
+
+**Enjoy!**
