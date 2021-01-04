@@ -1,0 +1,22 @@
+FROM python:3
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /src
+WORKDIR /src
+COPY requirements.txt /src/
+# RUN apt-get update && apt-get install -y --no-install-recommends \
+        
+#         unzip \
+#         unixodbc-dev \
+#         unixodbc 
+
+RUN apt-get install curl
+RUN apt-get install apt-transport-https
+# RUN apt install unixodbc-dev -y
+# RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+# RUN curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | tee /etc/apt/sources.list.d/msprod.list
+
+# RUN apt-get update
+# ENV ACCEPT_EULA=y DEBIAN_FRONTEND=noninteractive
+RUN pip install -r requirements.txt
+COPY . /src/

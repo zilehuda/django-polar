@@ -1,0 +1,31 @@
+# Django
+asgiref==3.2.10
+Django==3.1.1
+pytz==2020.1
+sqlparse==0.3.1
+django-enumfield==2.0.2
+
+# authentication
+djoser==2.1.0
+djangorestframework-simplejwt==4.6.0
+
+
+# DRF
+djangorestframework==3.11.1
+django-filter==2.2.0
+Markdown==3.2.2
+
+# MySQL
+mysqlclient==2.0.1
+
+# uWSGI
+uwsgi==2.0.17
+
+# Documentation
+drf-yasg==1.17.0
+
+# CORS
+django-cors-headers==3.2.0
+
+
+whitenoise==5.2.0
